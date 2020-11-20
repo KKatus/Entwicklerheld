@@ -1,4 +1,4 @@
-package de.entwicklerheld.anagram;
+package Anagram_Challenge;
 
 import java.util.Arrays;
 
