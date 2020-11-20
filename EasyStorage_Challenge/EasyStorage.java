@@ -15,6 +15,7 @@ public class EasyStorage {
         store(item, repository);
         getAllData();
         System.out.println(getRepository(item, repository));
+        System.out.println(getItem(item, repository));
 
     }
 
@@ -35,6 +36,14 @@ public class EasyStorage {
             return null;
         }
 
+    }
+
+    public static String getItem(String item, String repository) {
+        if (hash_map.containsValue(repository) == true) {
+            return item;
+        } else {
+            return null;
+        }
     }
 
 }
