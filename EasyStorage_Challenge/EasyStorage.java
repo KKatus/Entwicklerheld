@@ -20,6 +20,11 @@ public class EasyStorage {
     }
 
     public static void store(String item, String repository) {
+        if (item == null || repository == null) {
+            throw new NullPointerException();
+        } else if (item.isEmpty() || repository.isEmpty()) {
+            throw new IllegalArgumentException();
+        }
         hash_map.put(item, repository);
         System.out.println(hash_map);
 
